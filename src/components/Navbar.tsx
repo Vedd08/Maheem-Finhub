@@ -41,9 +41,6 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link href="/login" className="px-6 py-3 bg-brand-primary text-white text-button-md font-semibold rounded-3xl hover:bg-brand-primary/90 transition-colors">
-              Login
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,13 +75,6 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link
-                  href="/login"
-                  onClick={() => setIsOpen(false)}
-                  className="block px-3 py-3 mt-4 rounded-3xl text-button-md font-semibold bg-brand-primary text-white text-center hover:bg-opacity-90"
-                >
-                  Login
-              </Link>
             </div>
           </motion.div>
         )}
