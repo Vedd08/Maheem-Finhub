@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   title: "Maheem Finhub | Premium Financial Solutions",
   description: "Empowering your future with smart financial solutions. Home Loan, Mutual Funds, Mortgage Loan, Term Plan in Surat.",
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: "/FinhuB.png",
+    apple: "/FinhuB.png",
   },
 };
 
