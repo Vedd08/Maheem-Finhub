@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <rect width="180" height="50" rx="8" fill="#ffffff"/>
+  <g transform="translate(12, 10)">
+    <!-- Axis Burgundy Triangle 'A' -->
+    <path d="M15,0 L30,30 L18,30 L15,22 L12,30 L0,30 Z" fill="#97144d"/>
+    <polygon points="15,8 20,20 10,20" fill="#ffffff"/>
+  </g>
+  <!-- Text -->
+  <text x="48" y="30" font-family="'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="18" fill="#97144d" letter-spacing="0.5">AXIS BANK</text>
+</svg>

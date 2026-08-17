@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <rect width="180" height="50" rx="8" fill="#ffffff"/>
+  <g transform="translate(12, 10)">
+    <!-- SBI Blue Circle with Keyhole Notch -->
+    <circle cx="15" cy="15" r="14" fill="#00a5ec"/>
+    <circle cx="15" cy="10" r="5" fill="#ffffff"/>
+    <rect x="13.5" y="10" width="3" height="15" fill="#ffffff"/>
+  </g>
+  <!-- Text -->
+  <text x="48" y="30" font-family="'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="20" fill="#282c37" letter-spacing="0.5">SBI</text>
+  <text x="92" y="30" font-family="'Montserrat', 'Arial', sans-serif" font-weight="600" font-size="14" fill="#00a5ec">BANK</text>
+</svg>

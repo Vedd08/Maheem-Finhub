@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 50" width="190" height="50">
+  <rect width="190" height="50" rx="8" fill="#ffffff"/>
+  <g transform="translate(12, 10)">
+    <!-- ICICI Emblem -->
+    <path d="M0,5 C0,2 3,0 6,0 L20,0 C26,0 30,5 30,15 C30,25 26,30 20,30 L6,30 C3,30 0,28 0,25 Z" fill="#f37021"/>
+    <circle cx="15" cy="15" r="7" fill="#ffffff"/>
+    <path d="M12,8 L20,15 L12,22 Z" fill="#b02a30"/>
+  </g>
+  <!-- Text -->
+  <text x="50" y="30" font-family="'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="17" fill="#b02a30" letter-spacing="0.5">ICICI BANK</text>
+</svg>

@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1E3A8A; /* Royal Blue from text */
+  --color-brand-highlight: #7BC243; /* Leaf Green from logo swoosh */
+  --color-brand-accent: #6B7280; /* Grey from the bar chart */
+  --color-brand-light: #F4F9F1; /* Very light green tint for backgrounds */
+  --color-brand-text: #1E293B;
+  --color-brand-text-light: #64748B;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-jakarta);
+
+  /* Display/body type scale — mega hero (900) down to caption */
+  --text-display-mega: 7.875rem;
+  --text-display-mega--line-height: 6.6938rem;
+  --text-display-xxl: 6rem;
+  --text-display-xxl--line-height: 5.1rem;
+  --text-display-xl: 4rem;
+  --text-display-xl--line-height: 3.4rem;
+  --text-display-lg: 2.9375rem;
+  --text-display-lg--line-height: 4.40625rem;
+  --text-display-lg--letter-spacing: -0.006em;
+  --text-display-md: 2.5rem;
+  --text-display-md--line-height: 2.125rem;
+  --text-display-sm: 2rem;
+  --text-display-sm--line-height: 2.4rem;
+  --text-display-sm--letter-spacing: -0.03em;
+  --text-display-xs: 1.5rem;
+  --text-display-xs--line-height: 1.95rem;
+  --text-display-xs--letter-spacing: -0.02em;
+  --text-body-lg: 1.25rem;
+  --text-body-lg--line-height: 1.875rem;
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.5rem;
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.25rem;
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1rem;
+  --text-button-md: 1rem;
+  --text-button-md--line-height: 1.5rem;
+}
+
+:root {
+  --background: #FCFDFE;
+  --foreground: #2C3E50;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  min-height: 100%;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.font-heading {
+  font-feature-settings: "ss01" on, "cv01" on;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes float-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.animate-float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+.marquee-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* 3D Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
