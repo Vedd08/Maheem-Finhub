@@ -77,21 +77,25 @@ export default function HomePage() {
       title: "Mutual Funds",
       description: "Build wealth over time with expertly curated SIPs and lumpsum investment strategies.",
       icon: LineChart,
+      href: "/calc/loan-sip",
     },
     {
       title: "Home Loan",
       description: "Turn your dream home into reality with our competitive interest rates and easy processing.",
       icon: Home,
+      href: "/loans/home-loan",
     },
     {
       title: "Mortgage Loan",
       description: "Unlock the value of your property with hassle-free loan against property solutions.",
       icon: Building2,
+      href: "/loans/loan-against-property",
     },
     {
       title: "Term Plan",
       description: "Secure your family's financial future with comprehensive life insurance coverage.",
       icon: ShieldCheck,
+      href: "/contact",
     }
   ];
 
@@ -246,9 +250,9 @@ export default function HomePage() {
                   </Link>
                 </MagneticButton>
               </motion.div>
-             
+
               {/* Trust Indicators */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.8 }}
@@ -257,8 +261,8 @@ export default function HomePage() {
                 <div className="flex -space-x-3">
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-10 h-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center overflow-hidden shadow-sm">
-                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                       <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="Client" className="w-full h-full object-cover" />
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="Client" className="w-full h-full object-cover" />
                     </div>
                   ))}
                 </div>
@@ -293,7 +297,7 @@ export default function HomePage() {
                   {/* Decorative glass elements */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-bl-full" />
                   <div className="absolute bottom-0 left-0 w-40 h-40 bg-brand-highlight/10 rounded-tr-full" />
-                  
+
                   {/* Lottie embedded inside a 3D elevated layer */}
                   <div className="relative w-full h-full p-8 transform-gpu preserve-3d flex items-center justify-center" style={{ transform: "translateZ(40px)" }}>
                     <Player
@@ -304,9 +308,9 @@ export default function HomePage() {
                     />
                   </div>
                 </div>
-                
+
                 {/* Floating Stats Badge dynamically placed in 3D space */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, z: -50 }}
                   animate={{ opacity: 1, z: 50 }}
                   transition={{ delay: 1.2, duration: 1 }}
@@ -321,16 +325,16 @@ export default function HomePage() {
                     <p className="text-xl font-heading font-black text-brand-text">+24.5%</p>
                   </div>
                 </motion.div>
-                
+
                 {/* Floating Shield Badge dynamically placed in 3D space */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, z: -50 }}
                   animate={{ opacity: 1, z: 80 }}
                   transition={{ delay: 1.4, duration: 1 }}
                   className="absolute top-20 -right-2 sm:-right-6 bg-white/90 backdrop-blur-md border border-white shadow-2xl rounded-2xl p-3 flex items-center gap-3 z-20 pointer-events-none transform-gpu"
                   style={{ transform: "translateZ(120px)" }}
                 >
-                   <div className="w-10 h-10 rounded-full bg-brand-highlight/20 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-brand-highlight/20 flex items-center justify-center">
                     <ShieldCheck className="w-5 h-5 text-brand-highlight" />
                   </div>
                   <div className="pr-2">
@@ -382,8 +386,8 @@ export default function HomePage() {
       {/* Associated Partners Marquee */}
       <section className="py-12 bg-white border-b border-gray-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 text-center mb-8">
-           <KineticText as="h3" className="text-display-xs font-heading font-bold text-brand-text">Associated Partners</KineticText>
-           <div className="h-1 w-16 bg-brand-highlight mx-auto mt-3 rounded"></div>
+          <KineticText as="h3" className="text-display-xs font-heading font-bold text-brand-text">Associated Partners</KineticText>
+          <div className="h-1 w-16 bg-brand-highlight mx-auto mt-3 rounded"></div>
         </div>
         <div className="relative flex overflow-x-hidden group marquee-fade">
           <div className="animate-marquee whitespace-nowrap flex items-center gap-8 py-4">
@@ -463,60 +467,62 @@ export default function HomePage() {
 
         {/* Replaced HorizontalServices with a true 3D spatial grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 perspective-1000">
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {services.map((service, idx) => (
-                 <ThreeDCard key={idx} intensity={25}>
-                    <div 
-                       className="bg-white/70 backdrop-blur-2xl p-8 rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.06)] h-full border border-white/80 hover:border-brand-primary/20 transition-all duration-300 flex flex-col group relative preserve-3d hover:shadow-[0_30px_60px_rgba(30,58,138,0.12)]"
-                       style={{ transformStyle: "preserve-3d" }}
-                    >
-                       {/* Decorative 3D Glass Layer inside the card */}
-                       <div 
-                          className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" 
-                          style={{ transform: "translateZ(10px)" }} 
-                       />
-                       
-                       <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-bl-full transition-transform group-hover:scale-110" />
-                       
-                       {/* Floating 3D Icon */}
-                       <div 
-                          className="w-16 h-16 rounded-2xl bg-brand-light flex items-center justify-center mb-6 text-brand-primary group-hover:bg-gradient-to-br group-hover:from-brand-primary group-hover:to-brand-highlight group-hover:text-white transition-all duration-500 shadow-md group-hover:shadow-xl relative preserve-3d"
-                          style={{ transform: "translateZ(60px)" }}
-                       >
-                          <service.icon className="w-8 h-8 transform-gpu" style={{ transform: "translateZ(20px)" }} />
-                          {/* Glow effect behind icon on hover */}
-                          <div className="absolute inset-0 bg-brand-highlight/40 blur-xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
-                       </div>
-                       
-                       {/* Floating Title */}
-                       <h3 
-                          className="text-xl font-bold font-heading text-brand-text mb-3 drop-shadow-sm"
-                          style={{ transform: "translateZ(40px)" }}
-                       >
-                          {service.title}
-                       </h3>
-                       
-                       {/* Floating Description */}
-                       <p 
-                          className="text-gray-500 text-sm leading-relaxed flex-grow"
-                          style={{ transform: "translateZ(30px)" }}
-                       >
-                          {service.description}
-                       </p>
-                       
-                       {/* Floating Call to Action */}
-                       <div 
-                          className="mt-6 flex items-center text-brand-highlight font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                          style={{ transform: "translateZ(50px)" }}
-                       >
-                          <span className="transform translate-x-[-10px] group-hover:translate-x-0 transition-transform duration-500 flex items-center">
-                             Explore <ArrowRight className="w-4 h-4 ml-1" />
-                          </span>
-                       </div>
-                    </div>
-                 </ThreeDCard>
-              ))}
-           </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, idx) => (
+              <Link key={idx} href={service.href} className="block h-full">
+                <ThreeDCard intensity={25}>
+                <div
+                  className="bg-white/70 backdrop-blur-2xl p-8 rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.06)] h-full border border-white/80 hover:border-brand-primary/20 transition-all duration-300 flex flex-col group relative preserve-3d hover:shadow-[0_30px_60px_rgba(30,58,138,0.12)] cursor-pointer"
+                  style={{ transformStyle: "preserve-3d" }}
+                >
+                  {/* Decorative 3D Glass Layer inside the card */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                    style={{ transform: "translateZ(10px)" }}
+                  />
+
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-brand-primary/5 rounded-bl-full transition-transform group-hover:scale-110" />
+
+                  {/* Floating 3D Icon */}
+                  <div
+                    className="w-16 h-16 rounded-2xl bg-brand-light flex items-center justify-center mb-6 text-brand-primary group-hover:bg-gradient-to-br group-hover:from-brand-primary group-hover:to-brand-highlight group-hover:text-white transition-all duration-500 shadow-md group-hover:shadow-xl relative preserve-3d"
+                    style={{ transform: "translateZ(60px)" }}
+                  >
+                    <service.icon className="w-8 h-8 transform-gpu" style={{ transform: "translateZ(20px)" }} />
+                    {/* Glow effect behind icon on hover */}
+                    <div className="absolute inset-0 bg-brand-highlight/40 blur-xl rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+                  </div>
+
+                  {/* Floating Title */}
+                  <h3
+                    className="text-xl font-bold font-heading text-brand-text mb-3 drop-shadow-sm"
+                    style={{ transform: "translateZ(40px)" }}
+                  >
+                    {service.title}
+                  </h3>
+
+                  {/* Floating Description */}
+                  <p
+                    className="text-gray-500 text-sm leading-relaxed flex-grow"
+                    style={{ transform: "translateZ(30px)" }}
+                  >
+                    {service.description}
+                  </p>
+
+                  {/* Floating Call to Action */}
+                  <div
+                    className="mt-6 flex items-center text-brand-highlight font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{ transform: "translateZ(50px)" }}
+                  >
+                    <span className="transform translate-x-[-10px] group-hover:translate-x-0 transition-transform duration-500 flex items-center">
+                      Explore <ArrowRight className="w-4 h-4 ml-1" />
+                    </span>
+                  </div>
+                </div>
+              </ThreeDCard>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Motion Graphics Interactive Banner */}
@@ -646,25 +652,25 @@ export default function HomePage() {
             >
               <ThreeDCard intensity={25}>
                 <div className="aspect-square md:h-[500px] rounded-[3rem] bg-gradient-to-br from-brand-primary to-blue-900 flex flex-col items-center justify-center p-8 text-center relative overflow-hidden shadow-[0_20px_50px_rgba(30,58,138,0.3)]">
-                   <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_2px,transparent_2px)] [background-size:30px_30px]"></div>
-                   
-                   {/* 3D Floating Elements inside Card */}
-                   <motion.div 
-                     animate={{ y: [-10, 10, -10], rotateZ: [0, 5, 0] }}
-                     transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                     className="z-10"
-                   >
-                      <ShieldCheck className="w-20 h-20 text-brand-highlight mb-6 drop-shadow-[0_0_15px_rgba(123,194,67,0.5)]" />
-                   </motion.div>
-                   
-                   <h3 className="text-white text-display-sm font-heading font-extrabold z-10 tracking-wide drop-shadow-md">
-                     TRUST & TRANSPARENCY
-                   </h3>
-                   <p className="text-white/80 mt-4 z-10 max-w-sm text-body-sm">We believe in building long-lasting relationships based on absolute trust and clarity.</p>
-                   
-                   {/* Decorative 3D Spheres */}
-                   <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
-                   <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-highlight/20 rounded-full blur-2xl"></div>
+                  <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_2px,transparent_2px)] [background-size:30px_30px]"></div>
+
+                  {/* 3D Floating Elements inside Card */}
+                  <motion.div
+                    animate={{ y: [-10, 10, -10], rotateZ: [0, 5, 0] }}
+                    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                    className="z-10"
+                  >
+                    <ShieldCheck className="w-20 h-20 text-brand-highlight mb-6 drop-shadow-[0_0_15px_rgba(123,194,67,0.5)]" />
+                  </motion.div>
+
+                  <h3 className="text-white text-display-sm font-heading font-extrabold z-10 tracking-wide drop-shadow-md">
+                    TRUST & TRANSPARENCY
+                  </h3>
+                  <p className="text-white/80 mt-4 z-10 max-w-sm text-body-sm">We believe in building long-lasting relationships based on absolute trust and clarity.</p>
+
+                  {/* Decorative 3D Spheres */}
+                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
+                  <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-highlight/20 rounded-full blur-2xl"></div>
                 </div>
               </ThreeDCard>
 
@@ -715,7 +721,8 @@ export default function HomePage() {
       </section>
 
       {/* Adding custom animations for marquee */}
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes marquee {
           0% { transform: translateX(0); }
           100% { transform: translateX(-33.33%); }
