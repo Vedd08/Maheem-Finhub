@@ -229,7 +229,7 @@ export default function HomePage() {
               >
                 <MagneticButton>
                   <a
-                    href="http://localhost:3001/calc/loan-sip"
+                    href="/calc/loan-sip"
                     className="relative overflow-hidden px-8 py-4 bg-brand-primary text-white rounded-full font-bold shadow-xl shadow-brand-primary/20 w-full sm:w-auto flex items-center justify-center group text-button-md transition-all hover:shadow-2xl hover:shadow-brand-primary/30 hover:-translate-y-0.5"
                   >
                     <div className="absolute inset-0 bg-white/20 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
@@ -700,7 +700,7 @@ export default function HomePage() {
             <p className="text-white/80 mb-10 text-body-lg max-w-2xl mx-auto font-medium">Compare loan rates, see the power of SIP investing, and get a perfectly balanced portfolio.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <MagneticButton>
-                <a href="http://localhost:3001/calc/loan-sip" className="block px-8 py-4 bg-brand-highlight text-brand-text rounded-full font-bold text-button-md shadow-[0_0_30px_rgba(123,194,67,0.4)] hover:shadow-[0_0_40px_rgba(123,194,67,0.6)] hover:-translate-y-1 transition-all transform-gpu">
+                <a href="/calc/loan-sip" className="block px-8 py-4 bg-brand-highlight text-brand-text rounded-full font-bold text-button-md shadow-[0_0_30px_rgba(123,194,67,0.4)] hover:shadow-[0_0_40px_rgba(123,194,67,0.6)] hover:-translate-y-1 transition-all transform-gpu">
                   Loan SIP Calculator
                 </a>
               </MagneticButton>
